@@ -43,6 +43,7 @@
                       <label class="lyear-switch switch-solid switch-primary">
                         	<input type="radio" name="status" value="0">关闭
                         	<input type="radio" name="status" value="1">开启
+                        		
                         <span></span>
                       </label>
                     </div>
