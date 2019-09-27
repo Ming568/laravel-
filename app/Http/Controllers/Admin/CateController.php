@@ -10,4 +10,9 @@ class CateController extends Controller
      {
      	return view('Admin.cate');
      }
+	 public function addCate()
+	 {
+	 	return view('Admin.addCate');
+	 }
+	 
 }

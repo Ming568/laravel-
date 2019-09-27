@@ -9,6 +9,8 @@
 <link href="{{ asset('/Admin/css/bootstrap.min.css') }}" rel="stylesheet">
 <link href="{{ asset('/Admin/css/materialdesignicons.min.css') }}" rel="stylesheet">
 <link href="{{ asset('/Admin/css/style.min.css') }}" rel="stylesheet">
+	 <script src="{{asset('/Admin/lib/layui/layui.js')}}" charset="utf-8"></script>
+    <script type="text/javascript" src="{{asset('/Admin/js/xadmin.js')}}"></script>
 </head>
   
 <body>
@@ -19,7 +21,7 @@
       
       <!-- logo -->
       <div id="logo" class="sidebar-header">
-        <a href="{{ url('admin/index') }}"><img src="{{ url('/Admin/images/logo-sidebar.png') }}" title="Vanke" alt="Vanke" /></a>
+        <a href="{{ url('admin/index') }}" style="font-size:20px">Vanke</a>
       </div>
       <div class="lyear-layout-sidebar-scroll"> 
         
@@ -29,8 +31,8 @@
             <li class="nav-item nav-item-has-subnav">
               <a href="javascript:void(0)"><i class="mdi mdi-format-align-justify"></i> 分类管理</a>
               <ul class="nav nav-subnav">
-                <li> <a href="{{url('/admin/cate')}}">分类列表</a> </li>
-                <li> <a href="#">添加类别</a> </li>
+                <li> <a href="{{url('admin/cate')}}">分类列表</a> </li>
+                <li> <a href="{{url('admin/addCate')}}">添加类别</a> </li>
               </ul>
             </li>
             <li class="nav-item nav-item-has-subnav">
@@ -91,7 +93,7 @@
             <li class="nav-item nav-item-has-subnav">
               <a href="javascript:void(0)"><i class="mdi mdi-menu"></i>网站管理</a>
               <ul class="nav nav-subnav">
-                <li> <a href="#!">网站信息修改</a> </li>
+                <li> <a href="{{url('admin/webinfo')}}">网站信息修改</a> </li>
                 <li class="nav-item nav-item-has-subnav"> 
                   <a href="#!">关于我们</a>
                   <ul class="nav nav-subnav">
@@ -137,13 +139,13 @@
             <li class="dropdown dropdown-profile">
               <a href="javascript:void(0)" data-toggle="dropdown">
                <!-- <img class="img-avatar img-avatar-48 m-r-10" src="" />-->
-                <span>admin<span class="caret"></span></span>
+                <span>{{session('infos.username')}}<span class="caret"></span></span>
               </a>
               <ul class="dropdown-menu dropdown-menu-right">
                 <li> <a href="lyear_pages_profile.html"><i class="mdi mdi-account"></i> 个人信息</a> </li>
-                <li> <a href="lyear_pages_edit_pwd.html"><i class="mdi mdi-lock-outline"></i> 修改密码</a></li>
+                <li> <a href="lyear_pages_edit_pwd.html"><i class="mdi mdi-lock-outline"></i>修改密码</a></li>
                 <li class="divider"></li>
-                <li> <a href="{{url('admin/logout')}}"><i class="mdi mdi-logout-variant"></i> 退出登录</a></li>
+                <li> <a href="{{url('admin/logout')}}"><i class="mdi mdi-logout-variant"></i>退出登录</a></li>
               </ul>
             </li>
             <!--切换主题配色-->

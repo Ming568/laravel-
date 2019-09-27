@@ -15,6 +15,11 @@ class Loginmiddleware
      */
     public function handle($request, Closure $next)
     {
+    	//验证用户是否登陆
+//  	if()
+//  	{
+//  		
+//  	}
         return $next($request);
     }
 }

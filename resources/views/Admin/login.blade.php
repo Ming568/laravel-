@@ -68,6 +68,10 @@
 				{{ $error }}
 			</div>
 			@endforeach
+			
+			@if(session('error'))
+				{{ session('error') }}
+			@endif	
         <!--错误提示区域-->
        
     </div>

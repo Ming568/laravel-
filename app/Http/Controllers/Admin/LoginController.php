@@ -48,7 +48,7 @@ class LoginController extends Controller
 			return redirect('admin/index');
 		}else
 		{
-			return redirect('admin/login')->with('errors','验证码输入错误');	
+			return redirect('admin/login')->with('error','验证码输入错误');	
 		}
 		return redirect('admin/login');
 	}
