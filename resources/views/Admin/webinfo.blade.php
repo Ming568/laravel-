@@ -29,7 +29,6 @@
                     <div class="form-group">
                       <label for="web_site_copyright">版权信息</label>
                       <input class="form-control" type="text"  name="copyright" value="" placeholder="请输入版权信息" >
-                
                     </div>
                     <div class="form-group">
                       <label for="web_site_icp">icp备案信息</label>
@@ -42,7 +41,7 @@
                     <div class="form-group">
                       <label class="btn-block" for="status">站点开关</label>
                       <label class="lyear-switch switch-solid switch-primary">
-                        <input type="checkbox">
+                        <input type="checkbox" >
                         <span></span>
                       </label>
                     </div>
