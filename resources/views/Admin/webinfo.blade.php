@@ -41,7 +41,8 @@
                     <div class="form-group">
                       <label class="btn-block" for="status">站点开关</label>
                       <label class="lyear-switch switch-solid switch-primary">
-                        <input type="checkbox" >
+                        	<input type="radio" name="status" value="0">关闭
+                        	<input type="radio" name="status" value="1">开启
                         <span></span>
                       </label>
                     </div>
